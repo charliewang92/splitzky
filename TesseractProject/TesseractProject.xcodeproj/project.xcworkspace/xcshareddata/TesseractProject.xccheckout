@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>13D00612-C90A-4C9D-952A-816366C7CD43</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TesseractProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5F6574FF79D4AC5A0B4AF44EAFFFA2132FB2C5A1</key>
+		<string>https://github.com/charliewang92/splitzky.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TesseractProject/TesseractProject.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5F6574FF79D4AC5A0B4AF44EAFFFA2132FB2C5A1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/charliewang92/splitzky.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5F6574FF79D4AC5A0B4AF44EAFFFA2132FB2C5A1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5F6574FF79D4AC5A0B4AF44EAFFFA2132FB2C5A1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>splitzky</string>
+		</dict>
+	</array>
+</dict>
+</plist>
