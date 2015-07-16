@@ -1,0 +1,2 @@
+# splitzky
+Receipt Splitting App
