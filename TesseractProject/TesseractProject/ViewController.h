@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "TesseractOCR/TesseractOCR.h"
-@interface ViewController : UIViewController <G8TesseractDelegate>
+
+@interface ViewController : UIViewController <G8TesseractDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+- (IBAction)takePhoto:(UIButton *)sender;
+- (IBAction)selectPhoto:(UIButton *)sender;
 
 
 @end
-

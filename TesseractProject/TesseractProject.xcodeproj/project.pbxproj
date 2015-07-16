@@ -182,6 +182,7 @@
 				TargetAttributes = {
 					CBA77B551B58527500FF7FE8 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = D273ZPK48A;
 					};
 					CBA77B6E1B58527500FF7FE8 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -359,6 +360,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TesseractProject",
@@ -370,6 +373,7 @@
 					"-l\"c++\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -377,6 +381,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TesseractProject",
@@ -388,6 +394,7 @@
 					"-l\"c++\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -444,6 +451,7 @@
 				CBA77B7B1B58527500FF7FE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBA77B7C1B58527500FF7FE8 /* Build configuration list for PBXNativeTarget "TesseractProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +460,7 @@
 				CBA77B7E1B58527500FF7FE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

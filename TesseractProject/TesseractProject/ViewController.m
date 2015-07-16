@@ -19,7 +19,15 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // Charlie: set up labels, etc here
-    
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                              message:@"Device has no camera"
+                                                              delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles:nil];
+        [myAlertView show];
+    }
     
 }
 
@@ -29,7 +37,7 @@
     
     UIImage *imageToRecognize = [UIImage imageNamed:@"testingImage.png"];
     
-    
+    /*
     G8Tesseract *tesseract = [[G8Tesseract alloc] initWithLanguage:@"eng" engineMode:G8OCREngineModeTesseractOnly];
     tesseract.pageSegmentationMode = G8PageSegmentationModeAutoOnly;
     tesseract.charBlacklist =@"";
@@ -41,6 +49,7 @@
     
     NSString *recognizedText = tesseract.recognizedText;
     NSLog(@"%@", recognizedText);
+     */
 }
 
 - (void)didReceiveMemoryWarning {
@@ -116,6 +125,40 @@
 - (IBAction)clearCache:(id)sender
 {
     [G8Tesseract clearCache];
+}
+
+- (IBAction)takePhoto:(UIButton *)sender {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    [self presentViewController: picker animated: YES completion: NULL];
+}
+
+- (IBAction)selectPhoto:(UIButton *)sender {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController: picker animated: YES completion: NULL];
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *) info{
+    
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    self.imageView.image = chosenImage;
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end
